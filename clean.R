@@ -11,8 +11,9 @@
 # 1)	Load the dataset: hotelSurveyBarriot.json (similar to HW8, but a different dataset)
 # "Load JSON Libraries"
 clean_data <- raw_data
+hotelData <- fromJSON(clean_data)
 # 2)	Name the dataframe hotelSurvey
-hotelSurvey <- as.data.frame(clean_data)
+hotelSurvey <- as.data.frame(hotelData)
 View(hotelSurvey)
 # Part B: Explore Data Set
 # 1)	Ensure hotelSurvey is a dataframe, and look at the structure via the str() command
